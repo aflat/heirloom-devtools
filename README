@@ -1,3 +1,12 @@
+Initial code was written bt Gunnar Ritter, you can find it here:
+http://heirloom.sourceforge.net/devtools.html
+
+I imported it into github so I can change it up a bit to work on
+a more modern OS, Centos 6.6 x86_64 I have included the original 
+README contents, but I can't vouch for their correctness
+
+
+-------------Original README contents below-----------
 README file for the Heirloom Development Tools
 ==============================================
 
