@@ -5,6 +5,16 @@ I imported it into github so I can change it up a bit to work on
 a more modern OS, Centos 6.6 x86_64 I have included the original 
 README contents, but I can't vouch for their correctness
 
+Building on Centos 6.6:
+yum groupinstall 'Development Tools'
+yum install zlib-devel.i686  bzip2-devel.i686 glibc-devel.i686 libstdc++-devel.i686 compat-glibc-headers
+make
+make install
+
+There is a hardcoded dependency on the /usr/lib/x86_64-redhat-linux5E/include/stropts.h file,
+which is declared in the make/src/Makefile.mk file. compat-glibc-headers installs this. I don't know
+of a 32 bit version of this file, so I am cheating a bit here.
+
 
 -------------Original README contents below-----------
 README file for the Heirloom Development Tools
